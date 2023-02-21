@@ -6,8 +6,7 @@ const handler = async (req, res) => {
     
     const { hasParking, petFriendly, minPrice, maxPrice, page } = JSON.parse(req.body);
    
-    console.log(`${((page || 1) - 1 * 3)}`);
-
+    
     let hasParkingFilter = ``;
     let petFriendlyFilter = ``;
     let minPriceFilter = ``;

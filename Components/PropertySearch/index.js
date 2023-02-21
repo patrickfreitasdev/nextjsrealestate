@@ -65,7 +65,7 @@ export const PropertySearch = () => {
         const data = await response.json();
         setProperties(data.properties)
         setPagination(data.total)
-        console.log(data)
+        
     }
 
     useEffect(() => {

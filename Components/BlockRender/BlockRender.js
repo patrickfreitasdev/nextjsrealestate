@@ -36,7 +36,6 @@ export const BlockRender = ({ blocks }) => {
             }
 
             case 'core/column': {
-                console.log(block.attributes)
                 return <Column key={block.id} width={block.attributes.width}
                     backgroundColorBlock={theme[block.attributes.backgroundColor] || block.attributes.style?.color?.background}>
                     <BlockRender blocks={block.innerBlocks} />
@@ -80,7 +79,7 @@ export const BlockRender = ({ blocks }) => {
                 </Cover>
             }
             default: {
-                console.log("UNKOWN ", block);
+                //console.log("UNKOWN ", block);
                 return null
             }
         }
